@@ -12,3 +12,6 @@
     <div id="clock">00:00:00</div>
     <script>
         function updateTime() {
+            const now = new Date();
+            const timeStr = now.toTimeString().split(' ')[0];
+            document.getElementById('clock').innerText = timeStr;
